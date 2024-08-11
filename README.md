@@ -82,9 +82,28 @@ When clicking on one of the `Hotels`, `Cities` or `Countries` links, the applica
 
 ### Write-up
 
-<!-- Write-up/conclusion section -->
+**GENERAL:**
 
-_When all the behaviour is implemented, feel free to add some observations or conclusions you like to share in the section_
+- **Introduced Shared Package Schema:** Created a new shared package schema to standardize data structures and facilitate code sharing between different projects.
+
+**API:**
+
+- **Standardized JSON field names:** Updated naming conventions to camelCase to align with common JavaScript practices, enhancing consistency and readability.
+- **Added Zod library for Environment Variable Validation:** Implemented Zod to enhance environment variable validation, offering robust validation rules, default values, and detailed error reporting.
+- **Refactored MongoDB Connection Logic:** MongoDB connection logic out of route handlers to a dedicated module for improved organization and reusability.
+- **Implemented Controller and Service Pattern:** Introduced a controller and service pattern to enhance separation of concerns and streamline business logic management.
+- **Added Dependency Injection:** Integrated dependency injection to better manage dependencies, improving testability and flexibility.
+- **Centralized Error Handling:** Added a consistent error handling mechanism to improve reliability and user experience across the application.
+- **Refactored Route Management:** Moved hotel-related routes to a dedicated routes folder, enhancing code organization and maintainability.
+- **Improved Code Organization:** Relocated code to the src directory, resulting in a more organized and readable project structure.
+
+**FRONTEND:**
+
+- **Standardized JSON field names:** Updated naming conventions to camelCase to align with common JavaScript practices, enhancing consistency and readability.
+- **Separated API Call and Added Debounce:** Refactored the API call logic into a dedicated service and implemented a debounce mechanism to optimize search performance and reduce unnecessary API requests.
+- **Enhanced Hotel Search Functionality:** Improved search functionality to filter hotels based on user input, providing a more dynamic and responsive search experience.
+- **Split Search Bar into Components:** Refactored the search bar into a standalone component, improving code organization and reusability across different parts of the application.
+- **Implemented Routing with React Router DOM:** Added routing capabilities using React Router DOM to manage navigation within the application, including dynamic route handling for hotel details.
 
 ### Database structure
 
