@@ -106,6 +106,8 @@ When clicking on one of the `Hotels`, `Cities` or `Countries` links, the applica
 - **Implemented Routing with React Router DOM:** Added routing capabilities using React Router DOM to manage navigation within the application, including dynamic route handling for hotel details.
 - **Added Render Tests:** Implemented two render tests to verify the functionality of the search feature, ensuring that it behaves correctly when rendering search results.
 
+_P.S.: For detailed information on specific changes and features, please refer to the Pull Requests tab. I worked on separate feature branches and created PRs for each, so you’ll find comprehensive details and context there._
+
 ### Database structure
 
 #### Hotels Collection
