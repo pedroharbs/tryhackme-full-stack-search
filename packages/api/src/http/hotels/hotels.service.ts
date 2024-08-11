@@ -12,13 +12,19 @@ export class HotelService {
   }
 
   async listHotels(search?: string) {
+    const regexPattern = new RegExp(search!, "i");
+
     const query = search
       ? {
           $or: [
-            { chainName: { $regex: search, $options: "i" } },
-            { hotelName: { $regex: search, $options: "i" } },
-            { city: { $regex: search, $options: "i" } },
-            { country: { $regex: search, $options: "i" } },
+            { chainName: { $regex: regexPattern } },
+            { hotelName: { $regex: regexPattern } },
+            { city: { $regex: regexPattern } },
+            { state: { $regex: regexPattern } },
+            { zipCode: { $regex: regexPattern } },
+            { country: { $regex: regexPattern } },
+            { addressLine1: { $regex: regexPattern } },
+            { addressLine2: { $regex: regexPattern } },
           ],
         }
       : {};
