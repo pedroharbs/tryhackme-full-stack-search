@@ -104,6 +104,7 @@ When clicking on one of the `Hotels`, `Cities` or `Countries` links, the applica
 - **Enhanced Hotel Search Functionality:** Improved search functionality to filter hotels based on user input, providing a more dynamic and responsive search experience.
 - **Split Search Bar into Components:** Refactored the search bar into a standalone component, improving code organization and reusability across different parts of the application.
 - **Implemented Routing with React Router DOM:** Added routing capabilities using React Router DOM to manage navigation within the application, including dynamic route handling for hotel details.
+- **Added Render Tests:** Implemented two render tests to verify the functionality of the search feature, ensuring that it behaves correctly when rendering search results.
 
 ### Database structure
 
